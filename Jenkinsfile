@@ -18,13 +18,6 @@ pipeline{
           }
         }
       }
-    }
-    stage('Deploy'){
-      steps{
-        sh 'mvn deploy'
-        echo 'Deployment successful'
-      }
-    }
   }
   post{
     failure{
